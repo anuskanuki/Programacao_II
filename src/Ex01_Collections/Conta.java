@@ -1,50 +1,50 @@
+
 public class Conta implements Comparable {
 
-	private int  numero;
-	private String nomeUsuario;
-	private int saldo;
-	
-	public Conta(int numero, String nomeUsuario, int saldo) {
-		setNumero(numero);
-		setNomeUsuario(nomeUsuario);
-		setSaldo(saldo);
-	}
-	
-	
-	public int getNumero() {
-		return numero;
-	}
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}
-	public String getNomeUsuario() {
-		return nomeUsuario;
-	}
-	public void setNomeUsuario(String nomeUsuario) {
-		this.nomeUsuario = nomeUsuario;
-	}
-	public int getSaldo() {
-		return saldo;
-	}
-	public void setSaldo(int saldo) {
-		this.saldo = saldo;
-	}
+    private int numero;
+    private String nomeUsuario;
+    private int saldo;
 
+    public Conta(int numero, String nomeUsuario, int saldo) {
+        setNumero(numero);
+        setNomeUsuario(nomeUsuario);
+        setSaldo(saldo);
+    }
 
-	@Override
-	public int compareTo(Object outraConta) {
-		Conta outra = (Conta)outraConta;
-		if (this.getSaldo() < outra.getSaldo()) {
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public String getNomeUsuario() {
+        return nomeUsuario;
+    }
+
+    public void setNomeUsuario(String nomeUsuario) {
+        this.nomeUsuario = nomeUsuario;
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(int saldo) {
+        this.saldo = saldo;
+    }
+
+    @Override
+    public int compareTo(Object outraConta) {
+        Conta outra = (Conta) outraConta;
+        if (this.getSaldo() < outra.getSaldo()) {
             return -1;
         }
         if (this.getSaldo() > outra.getSaldo()) {
             return 1;
         }
         return 0;
-	}
+    }
 
-	
-	
-	
-	
 }

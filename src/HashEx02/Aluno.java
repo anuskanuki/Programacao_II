@@ -1,6 +1,6 @@
 package HashEx02;
 
-public class Aluno {
+public class Aluno implements Comparable<Aluno> {
 
     private int registroAcademico;
     private String nome;
@@ -69,5 +69,16 @@ public class Aluno {
             throw new IllegalArgumentException("Data de nascimento inválida");
         }
         this.dataDeNascimento = dataDeNascimento;
+    }
+
+    @Override
+    public int compareTo(Aluno aluno) {//armazena todos os estudantes ordenados pelo registro academico
+        if (this.getRegistroAcademico() > aluno.getRegistroAcademico()) {
+            return -1;
+        }
+        if (this.getRegistroAcademico() < aluno.getRegistroAcademico()) {
+            return 1;
+        }
+        return 0;
     }
 }
