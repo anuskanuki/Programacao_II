@@ -1,4 +1,4 @@
-package CollectionsExercicios;
+package Ex01_Collections_Nuki;
 
 public class Conta implements Comparable {
 

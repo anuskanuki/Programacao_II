@@ -1,4 +1,4 @@
-package CollectionsExercicios;
+package Ex01_Collections_Nuki;
 
 public class ContaPoupanca extends Conta {
 

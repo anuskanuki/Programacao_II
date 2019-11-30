@@ -1,5 +1,5 @@
 
-package CollectionsExercicios;
+package Ex05_Collections;
 
 
 public class Contato {

@@ -1,4 +1,4 @@
-package CollectionsExercicios;
+package Ex01_Collections_Nuki;
 
 public class ClasseMain {
 
@@ -33,3 +33,4 @@ public class ClasseMain {
 //Exercicios
 //2) mudar para linked hash set a declaracao da lista de contas na classe banco
 //3) tree set - ordenar pelo nome a arvore e implementar o comparator para a ordenacao pelo nome
+//(resolucoes no "Ex01_Collections" - q é o q a profe fez em sala)

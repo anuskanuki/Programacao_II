@@ -1,4 +1,4 @@
-package CollectionsExercicios;
+package Ex01_Collections_Nuki;
 
 import java.util.ArrayList;
 import java.util.Collections;
